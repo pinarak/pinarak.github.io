@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pinarak | Hotel and Restaurant</title>
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="/resources/css/style.min.css" />
+
+    <!-- Plugin tambahan -->
+    <link rel="stylesheet" href="/resources/plugin/swiper/swiper.min.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Logo -->
+    <div class="logo">
+      <img
+        src="/img/logo.png"
+        alt="Pinarak"
+        title="Pinarak Hotel and Restaurant"
+      />
+    </div>
+    <!-- Menu navigasi -->
+    <nav>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <div class="dropdown">
+              <a href="#">Hotel</a>
+              <div class="submenu">
+                <a href="junior.html">Junior Room</a>
+                <a href="suite.html">Suite Room</a>
+                <a href="presidential.html">Presidential Room</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="restaurant.html">Restaurant</a></li>
+          <li><a href="pool.html">Pool</a></li>
+          <li><a href="galery.html">Galery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Main konten -->
+    <main>
+      <div class="room">
+        <img src="/img/junior.JPG" alt="hotel room" />
+      </div>
+
+      <div class="rooms">
+        <h1>Presidential Room</h1>
+        <table>
+          <tr>
+            <td>- Single bed</td>
+            <td>- Towel and Bathub</td>
+          </tr>
+          <tr>
+            <td>- Free wifi and entertainment access</td>
+            <td>- Door with private NFC card</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <div class="foot1">
+        <img src="/img/logo.png" alt="Pinarak" />
+        <div class="alamat">
+          <p>Pinarak Hotel and Restaurant</p>
+          <p>0351-1234</p>
+          <p>Jl. Belang no 10 Kuta - Bali</p>
+        </div>
+      </div>
+
+      <div class="foot2">
+        <h1>Find us on</h1>
+        <div class="sosmed">
+          <img
+            src="/img/facebook-f-brands.svg"
+            alt="facebook"
+            title="facebook"
+          />
+          <img
+            src="/img/instagram-brands.svg"
+            alt="instagram"
+            title="instagram"
+          />
+          <img src="/img/twitter-brands.svg" alt="twitter" title="twitter" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swipperjs -->
+    <script src="/resources/plugin/swiper/swiper.min.js"></script>
+
+    <!-- Swipper js config -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        speed: 1200,
+        spaceBetween: 0,
+        autoplay: {
+          delay: 5000
+        },
+        fadeEffect: {
+          crossFade: true
+        }
+      });
+    </script>
+
+    <!-- Scroll reveal config-->
+    <script>
+      ScrollReveal().reveal(".rooms", {
+        delay: 400,
+        duration: 500,
+        reset: true
+      });
+    </script>
+  </body>
+</html>

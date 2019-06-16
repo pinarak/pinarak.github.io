@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  position: relative;
+  width: 170px;
+  box-sizing: border-box;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+
+  img {
+    width: 170px;
+  }
+}
+
+nav {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 0;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+
+  .menu {
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+
+      li {
+        display: inline-flex;
+        padding: 0 10px;
+        box-sizing: border-box;
+
+        a {
+          display: block;
+          text-decoration: none;
+          color: black;
+          text-transform: uppercase;
+          cursor: pointer;
+
+          &::after {
+            content: "";
+            width: 0;
+            height: 1px;
+            background: #000;
+            display: block;
+            transition: all 0.2s linear;
+          }
+
+          &:hover::after {
+            width: 100%;
+          }
+        }
+
+        .dropdown {
+          display: inline-block;
+
+          .submenu {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            text-align: left;
+            overflow: hidden;
+            background-color: #fff;
+            border: none;
+            cursor: pointer;
+
+            a {
+              padding: 10px 30px;
+              border: none;
+            }
+          }
+
+          &:hover .submenu {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+
+  .jumbotron {
+    width: 100%;
+    height: 600px;
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 700px;
+    }
+  }
+
+  .welcome {
+    width: 100%;
+    height: 540px;
+
+    h1 {
+      margin: 30px 0 0 0;
+      font-family: "Cinzel", serif;
+      font-weight: normal;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 80px;
+      width: 500px;
+      position: relative;
+      top: 100px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    p {
+      margin: 0;
+      font-family: "Montserrat", sans-serif;
+      width: 760px;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      text-align: center;
+      word-spacing: 2px;
+    }
+  }
+
+  .maps {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    h1 {
+      margin: 0;
+      font-family: "Montserrat", sans-serif;
+      font-weight: normal;
+      text-align: center;
+      font-size: 40px;
+      position: relative;
+      top: 20px;
+    }
+
+    iframe {
+      display: block;
+      width: 860px;
+      height: 500px;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+    }
+  }
+
+  .room {
+    margin: 0;
+    padding: 0;
+    img {
+      position: relative;
+      width: 80%;
+      height: auto;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .rooms {
+    h1 {
+      font-family: "Cinzel", serif;
+      font-size: 50px;
+      font-weight: normal;
+      text-align: center;
+    }
+
+    table {
+      border-collapse: collapse;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+
+      tr,
+      td {
+        text-align: center;
+        width: 400px;
+      }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background: #ebebeb;
+  display: inline-flex;
+  overflow: hidden;
+
+  .foot1 {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    left: 40px;
+
+    img {
+      width: 100px;
+      margin: 20px;
+    }
+
+    .alamat {
+      margin: 0;
+
+      p {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1em;
+        position: relative;
+        left: 20px;
+      }
+    }
+  }
+
+  .foot2 {
+    width: 50%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+
+    h1 {
+      font-weight: normal;
+      position: relative;
+      margin: 20px;
+    }
+
+    .sosmed {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      left: 10px;
+
+      img {
+        height: 30px;
+        margin: 0 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pinarak | Hotel and Restaurant</title>
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="/resources/css/style.min.css" />
+
+    <!-- Plugin tambahan -->
+    <link rel="stylesheet" href="/resources/plugin/swiper/swiper.min.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Logo -->
+    <div class="logo">
+      <img
+        src="/img/logo.png"
+        alt="Pinarak"
+        title="Pinarak Hotel and Restaurant"
+      />
+    </div>
+    <!-- Menu navigasi -->
+    <nav>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <div class="dropdown">
+              <a href="#">Hotel</a>
+              <div class="submenu">
+                <a href="junior.html">Junior Room</a>
+                <a href="suite.html">Suite Room</a>
+                <a href="presidential.html">Presidential Room</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="restaurant.html">Restaurant</a></li>
+          <li><a href="pool.html">Pool</a></li>
+          <li><a href="galery.html">Galery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Main konten -->
+    <main>
+      <div class="jumbotron">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/img/1.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="/img/2.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="/img/3.jpg" alt="" /></div>
+          </div>
+        </div>
+      </div>
+      <div class="welcome">
+        <h1>hotel & restaurant</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+          odio praesentium, maiores eveniet magnam sapiente voluptatibus nostrum
+          maxime molestiae fugit consectetur quibusdam vitae vel dolorem magni
+          tempore. Recusandae inventore, labore et non accusantium nihil ducimus
+          sed asperiores sequi, dolorem voluptas, iste commodi nisi minima.
+          Corrupti eaque doloribus eligendi, aperiam nemo hic repellat illo
+          itaque illum maxime rem porro dolorum rerum expedita laborum, eos
+          tempora sed deserunt consequuntur ipsa natus temporibus architecto?
+          Eaque deserunt expedita illo rem, minus, eveniet, esse debitis
+          mollitia hic sapiente molestias. In tempore ipsam, sequi rerum quam
+          sint. Minus dignissimos expedita aperiam sed soluta quia inventore
+          esse!Recusandae inventore, labore et non accusantium nihil ducimus sed
+          asperiores sequi, dolorem voluptas, iste commodi nisi minima. Corrupti
+          eaque doloribus eligendi, aperiam nemo hic repellat illo itaque illum
+          maxime rem porro dolorum rerum expedita laborum, eos tempora sed
+          deserunt consequuntur ipsa natus temporibus architecto? Eaque deserunt
+          expedita illo rem, minus, eveniet, esse debitis mollitia hic sapiente
+          molestias. In tempore ipsam, sequi rerum quam sint. Minus dignissimos
+          expedita aperiam sed soluta quia inventore esse!
+        </p>
+      </div>
+
+      <div class="maps">
+        <h1>Find us on map</h1>
+        <iframe
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?q=kuta&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </div>
+    </main>
+
+    <footer>
+      <div class="foot1">
+        <img src="/img/logo.png" alt="Pinarak" />
+        <div class="alamat">
+          <p>Pinarak Hotel and Restaurant</p>
+          <p>0351-1234</p>
+          <p>Jl. Belang no 10 Kuta - Bali</p>
+        </div>
+      </div>
+
+      <div class="foot2">
+        <h1>Find us on</h1>
+        <div class="sosmed">
+          <img
+            src="/img/facebook-f-brands.svg"
+            alt="facebook"
+            title="facebook"
+          />
+          <img
+            src="/img/instagram-brands.svg"
+            alt="instagram"
+            title="instagram"
+          />
+          <img src="/img/twitter-brands.svg" alt="twitter" title="twitter" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swipperjs -->
+    <script src="/resources/plugin/swiper/swiper.min.js"></script>
+
+    <!-- Swipper js config -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        speed: 1200,
+        spaceBetween: 0,
+        autoplay: {
+          delay: 5000
+        },
+        fadeEffect: {
+          crossFade: true
+        }
+      });
+    </script>
+
+    <!-- Scroll reveal config-->
+    <script>
+      ScrollReveal().reveal(".welcome", {
+        delay: 400,
+        duration: 500,
+        reset: true
+      });
+
+      ScrollReveal().reveal(".maps", {
+        delay: 400,
+        duration: 500,
+        reset: true
+      });
+    </script>
+  </body>
+</html>
