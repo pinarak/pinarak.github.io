@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pinarak | Hotel and Restaurant</title>
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="/resources/css/style.min.css" />
+
+    <!-- Plugin tambahan -->
+
+    <link
+      rel="stylesheet"
+      href="/resources/plugin/simple-lightbox/simplelightbox.min.css"
+    />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Logo -->
+    <div class="logo">
+      <img
+        src="/img/logo.png"
+        alt="Pinarak"
+        title="Pinarak Hotel and Restaurant"
+      />
+    </div>
+    <!-- Menu navigasi -->
+    <nav>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <div class="dropdown">
+              <a href="#">Hotel</a>
+              <div class="submenu">
+                <a href="junior.html">Junior Room</a>
+                <a href="suite.html">Suite Room</a>
+                <a href="presidential.html">Presidential Room</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="restaurant.html">Restaurant</a></li>
+          <li><a href="galery.html">Galery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Main konten -->
+    <main>
+      <div class="container">
+        <div class="gallery">
+          <a href="" class="big"
+            ><img src="" alt="" title="Beautiful Image"
+          /></a>
+          <a href=""><img src="" alt="" title=""/></a>
+          <a href=""><img src="" alt="" title="Beautiful Image"/></a>
+          <a href=""><img src="" alt="" title=""/></a>
+          <div class="clear"></div>
+
+          <a href=""><img src="" alt="" title=""/></a>
+          <a href=""><img src="" alt="" title=""/></a>
+          <a href="" class="big"><img src="" alt="" title=""/></a>
+          <a href=""><img src="" alt="" title=""/></a>
+          <div class="clear"></div>
+
+          <a href="" class="big"><img src="" alt="" title=""/></a>
+          <a href=""><img src="" alt="" title=""/></a>
+          <a href=""><img src="" alt="" title=""/></a>
+          <a href=""><img src="" alt="" title=""/></a>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="foot1">
+        <img src="/img/logo.png" alt="Pinarak" />
+        <div class="alamat">
+          <p>Pinarak Hotel and Restaurant</p>
+          <p>0351-1234</p>
+          <p>Jl. Belang no 10 Kuta - Bali</p>
+        </div>
+      </div>
+
+      <div class="foot2">
+        <h1>Find us on</h1>
+        <div class="sosmed">
+          <img
+            src="/img/facebook-f-brands.svg"
+            alt="facebook"
+            title="facebook"
+          />
+          <img
+            src="/img/instagram-brands.svg"
+            alt="instagram"
+            title="instagram"
+          />
+          <img src="/img/twitter-brands.svg" alt="twitter" title="twitter" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Simple lightbox -->
+    <script src="/resources/plugin/simple-lightbox/simple-lightbox.min.js"></script>
+
+    <!-- Simple lightbox config -->
+    <script>
+      $(function() {
+        var $gallery = $(".gallery a").simpleLightbox();
+
+        $gallery
+          .on("show.simplelightbox", function() {
+            console.log("Requested for showing");
+          })
+          .on("shown.simplelightbox", function() {
+            console.log("Shown");
+          })
+          .on("close.simplelightbox", function() {
+            console.log("Requested for closing");
+          })
+          .on("closed.simplelightbox", function() {
+            console.log("Closed");
+          })
+          .on("change.simplelightbox", function() {
+            console.log("Requested for change");
+          })
+          .on("next.simplelightbox", function() {
+            console.log("Requested for next");
+          })
+          .on("prev.simplelightbox", function() {
+            console.log("Requested for prev");
+          })
+          .on("nextImageLoaded.simplelightbox", function() {
+            console.log("Next image loaded");
+          })
+          .on("prevImageLoaded.simplelightbox", function() {
+            console.log("Prev image loaded");
+          })
+          .on("changed.simplelightbox", function() {
+            console.log("Image changed");
+          })
+          .on("nextDone.simplelightbox", function() {
+            console.log("Image changed to next");
+          })
+          .on("prevDone.simplelightbox", function() {
+            console.log("Image changed to prev");
+          })
+          .on("error.simplelightbox", function(e) {
+            console.log("No image found, go to the next/prev");
+            console.log(e);
+          });
+      });
+    </script>
+  </body>
+</html>
