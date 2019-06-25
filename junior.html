@@ -22,6 +22,8 @@
       href="https://fonts.googleapis.com/css?family=Cinzel&display=swap"
       rel="stylesheet"
     />
+
+    <script src="https://kit.fontawesome.com/bdd9b5e999.js"></script>
   </head>
 
   <body>
@@ -62,15 +64,42 @@
       </div>
 
       <div class="rooms">
-        <h1>Junior Room</h1>
+        <h1>About this Room</h1>
+        <p>
+          This Junior Suite offers a large, single Queen bed, open bathroom,
+          rain shower, large bathtub and separate toilet. The lounge chairs on
+          the large balcony facing south invite you to enjoy Kuta beach at
+          sunset.
+        </p>
+      </div>
+
+      <div class="facilities">
+        <h1>Room Facilities</h1>
+
         <table>
           <tr>
-            <td>- Single bed</td>
-            <td>- Towel and Bathub</td>
+            <td><i class="fas fa-bath"></i></td>
+            <td>&nbsp;Bathub</td>
+            <td><i class="fas fa-shower"></i></td>
+            <td>&nbsp;Shower</td>
+            <td><i class="fas fa-tty"></i></td>
+            <td>&nbsp;Telephone</td>
           </tr>
           <tr>
-            <td>- Free wifi and entertainment access</td>
-            <td>- Door with private NFC card</td>
+            <td><i class="fas fa-desktop"></i></td>
+            <td>&nbsp;Work desk</td>
+            <td><i class="fas fa-tv"></i></td>
+            <td>&nbsp;Flat screen tv</td>
+            <td><i class="fas fa-couch"></i></td>
+            <td>&nbsp;Sitting area</td>
+          </tr>
+          <tr>
+            <td><i class="fas fa-utensils"></i></td>
+            <td>&nbsp;Breakfast</td>
+            <td><i class="fas fa-wifi"></i></td>
+            <td>&nbsp;Free wifi</td>
+            <td><i class="fas fa-apple-alt"></i></td>
+            <td>&nbsp;Free mineral water &nbsp;and fresh fruit</td>
           </tr>
         </table>
       </div>
@@ -123,7 +152,7 @@
 
     <!-- Scroll reveal config-->
     <script>
-      ScrollReveal().reveal(".rooms", {
+      ScrollReveal().reveal(".rooms, .facilities", {
         delay: 400,
         duration: 500,
         reset: true
