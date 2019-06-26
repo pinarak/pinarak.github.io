@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pinarak | Hotel and Restaurant</title>
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="/resources/css/style.min.css" />
+
+    <!-- Plugin tambahan -->
+    <link rel="stylesheet" href="/resources/plugin/swiper/swiper.min.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Logo -->
+    <div class="logo">
+      <img
+        src="/img/logo.png"
+        alt="Pinarak"
+        title="Pinarak Hotel and Restaurant"
+      />
+    </div>
+    <!-- Menu navigasi -->
+    <nav>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <div class="dropdown">
+              <a href="#">Hotel</a>
+              <div class="submenu">
+                <a href="junior.html">Junior Room</a>
+                <a href="suite.html">Suite Room</a>
+                <a href="presidential.html">Presidential Room</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="restaurant.html">Restaurant</a></li>
+          <li><a href="galery.html">Galery</a></li>
+          <li><a href="review.html">Review</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Main konten -->
+    <main>
+      <div class="review">
+        <h1>What People say about us</h1>
+
+        <div id="review-box">
+          <q
+            >Hotel just awesome hotel staff are really good .i think this is the
+            best hotel & staff in whole bali..food quality is best... The whole
+            package they give chief and best the main thing is behaviour tht
+            what i likes most</q
+          >
+          <p>edward hohenheim</p>
+
+          <q
+            >I wasn't sure before to book due to some comments. But we where
+            very happy of the warm welcoming, our beautiful room with sea view,
+            a good fitness center with just what you need to do some work out, 2
+            swimming pool (the smallest is often more quite, if you just want to
+            hang out with your book and enjoy a cocktail. Breakfast buffet is
+            huge, and enough choices for one week stay! The room service food
+            was not that incredible, this is maybe the only low point. Thank you
+            for everything!</q
+          >
+          <p>Elizabeth bathory</p>
+
+          <q
+            >Отель оставил очень приятное впечатление сразу же при заселении.
+            Просторный холл, много стильного дерева, воды, цветов, вид на море и
+            бассейн настраивают на отдых и расслабление.Территория ухоженная,
+            много пальм и отличные пейзажи. Номер тоже понравился: просторный,
+            уютный, стильный. Много настроек освещения, можно сделать и
+            романтик, и яркий свет. Понравилась ванная комната, в которой есть и
+            душ и сама ванна. Все из каких-то приятных на вид и ощупь
+            материалов. Все необходимое в номере есть, шумоизоляция отличная. С
+            балкона открывается вид на море, можно встречать рассветы. Для детей
+            есть детская комната с активной девушкой-аниматором, а также много
+            игрушек. Детский бассейн позволяет купаться в нем и большим и
+            маленьким. На территории есть спа комплекс, он тоже понравился, но
+            все время было уже забронировано. Пляж, к сожалению, оставляет
+            желать лучшего, сильные отливы и плохое дно не дали искупаться. Но
+            бассейны несколько скрашивают это. Если нужно именно море, придется
+            ездить на другие пляжи.</q
+          >
+          <p>Alisa Illinichina Amiella</p>
+
+          <q
+            >部屋、カスタマーサービスなど とても快適 朝食はそれほど悪くない。
+            場所はクタビーチに行く人々に最適です。 梅雨時のやさしい価格</q
+          >
+          <p>Sakamoto tatsuma</p>
+
+          <q
+            >オーシャンビューの部屋に泊まりました。十分な広さで、眺めがとても良く、とても満足でした。ビーチもすぐそこ。
+            プールは子供用を含めると３つあり、ジムもあります。ファミリーマートも近くに２件ありますし、
+            レストランも徒歩圏内にたくさんあり、不自由しません。ただここのホテルは階段が多く、
+            部屋を行き来するのはちょっと疲れました。朝ごはんは、毎回何か違ったものが出て、飽きませんでした。
+            朝食時に、マネージャーのような方が、何か困ったこと、不備はないかと聞いてこられます。
+            リクエストすればすぐに対応してくれました。シャワーのお湯がちょっと熱かったくらいで、後は快適に過ごせました。</q
+          >
+
+          <p>Tokugawa shige shige</p>
+
+          <q
+            >落ち着いてゆっくりと過ごせるホテルです。他のリゾートホテルに比べると少し割高ですが、この分のサービスが望めます。快適に過ごせました。</q
+          >
+
+          <p>Lindow Amamiya</p>
+        </div>
+
+        <div class="reviumu">Post your review</div>
+        <form onsubmit="return false;">
+          <div>
+            <input
+              type="text"
+              name="nama"
+              id="nama"
+              placeholder="Input your name"
+            />
+          </div>
+
+          <div>
+            <textarea
+              name="komentar"
+              id="komentar"
+              placeholder="Your comment goes here"
+            ></textarea>
+          </div>
+
+          <div><input type="submit" value="Send" onclick="simpan()" /></div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="foot1">
+        <img src="/img/logo.png" alt="Pinarak" />
+        <div class="alamat">
+          <p>Pinarak Hotel and Restaurant</p>
+          <p>0351-1234</p>
+          <p>Jl. Belang no 10 Kuta - Bali</p>
+        </div>
+      </div>
+
+      <div class="foot2">
+        <h1>Find us on</h1>
+        <div class="sosmed">
+          <img
+            src="/img/facebook-f-brands.svg"
+            alt="facebook"
+            title="facebook"
+          />
+          <img
+            src="/img/instagram-brands.svg"
+            alt="instagram"
+            title="instagram"
+          />
+          <img src="/img/twitter-brands.svg" alt="twitter" title="twitter" />
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function simpan() {
+        let nama = document.getElementById("nama").value;
+        let komen = document.getElementById("komentar").value;
+
+        let x = document.createElement("p");
+        let namaOrang = document.createTextNode(nama);
+        x.appendChild(namaOrang);
+
+        let z = document.createElement("q");
+        let komenOrang = document.createTextNode(komen);
+        z.appendChild(komenOrang);
+
+        var element = document.getElementById("review-box");
+
+        element.appendChild(z);
+        element.appendChild(x);
+      }
+    </script>
+
+    <!-- Scroll reveal config-->
+    <script>
+      ScrollReveal().reveal("q", {
+        delay: 200,
+        duration: 500,
+        reset: true
+      });
+
+      ScrollReveal().reveal("p", {
+        delay: 200,
+        duration: 500,
+        reset: true
+      });
+    </script>
+  </body>
+</html>
