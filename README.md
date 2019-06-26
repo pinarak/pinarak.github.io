@@ -1,2 +1,2 @@
 # web demo
-pinarak.github.io
+https://pinarak.github.io/
